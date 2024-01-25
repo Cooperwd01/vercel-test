@@ -1,0 +1,45 @@
+<!-- 
+  This is the main layout where you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Extends the layout from /docs/views/template.html -->
+{% extends "template.html" %}
+
+<!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="/autocomplete/accessible-autocomplete.min.css" />
+{% endblock %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Learning Support Fund
+{% endblock %}
+
+<!-- Edit the header -->
+<!-- Header code examples can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+  <!-- {{ header({
+    "service": {
+        "name": "Learning Support Fund",
+        "href": "/"
+      },
+      "showNav": "false",
+      "showSearch": "false"
+    })
+  }} -->
+{% endblock %}
+
+<!-- Edit the footer -->
+<!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+ 
+{% endblock %}
+
+{% block bodyEnd %}
+  {% block scripts %}
+   
+  {% endblock %}
+{% endblock %}
